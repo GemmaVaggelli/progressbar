@@ -22,11 +22,11 @@ void FileReader::detach(Observer *o) {
 
 }
 
-FileReader::FileReader(std::string directoryName) {
+FileReader::FileReader(const char *directoryName) {
     DIR *dir;
     struct dirent *ent;
     totalFiles=0;
-    dir = opendir ("../FileBin");
+    dir = opendir ( directoryName);
     while ((ent = readdir (dir)) != NULL) {
         if(ent->d_name[0] !='.'){
             fns.push_back( ent->d_name);

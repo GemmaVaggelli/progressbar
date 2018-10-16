@@ -10,9 +10,10 @@
 #include <list>
 #include <iostream>
 
+
 class FileReader : public Subject{
 public:
-    explicit FileReader(std::string directoryName);
+    explicit FileReader(const char *directoryName);
     void startReading();
     void notify() override ;
     void attach(Observer* o)override ;

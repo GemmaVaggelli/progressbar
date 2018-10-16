@@ -4,7 +4,7 @@
 #include "ByteBar.h"
 
 int main() {
-    FileReader fr("FileBin");
+    FileReader fr("../FileBin");
     FileBar fb(&fr);
     ByteBar bb(&fr);
     fr.startReading();
