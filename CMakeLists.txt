@@ -3,4 +3,4 @@ project(progressbar)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(progressbar main.cpp Subject.h Observer.h FileReader.cpp FileReader.h)
+add_executable(progressbar main.cpp Subject.h Observer.h FileReader.cpp FileReader.h FileBar.cpp FileBar.h ByteBar.cpp ByteBar.h)

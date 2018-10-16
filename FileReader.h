@@ -8,14 +8,31 @@
 
 #include "Subject.h"
 #include <list>
+#include <iostream>
 
 class FileReader : public Subject{
 public:
+    explicit FileReader(std::string directoryName);
+    void startReading();
     void notify() override ;
     void attach(Observer* o)override ;
     void detach(Observer* o)override ;
+
+    int getTotalFiles() const;
+
+    int getCurrentFile() const;
+
+    int getTotalBytes() const;
+
+    int getCurrentByte() const;
+
 private:
     std::list<Observer*> obs;
+    int totalFiles;
+    int currentFile;
+    int totalBytes;
+    int currentByte;
+    std::list<std::string> fns;
 
 
 };

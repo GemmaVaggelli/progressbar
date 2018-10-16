@@ -1,6 +1,11 @@
 #include <iostream>
+#include "FileReader.h"
+#include "FileBar.h"
+#include "ByteBar.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    FileReader fr("FileBin");
+    FileBar fb(&fr);
+    ByteBar bb(&fr);
+    fr.startReading();
 }
