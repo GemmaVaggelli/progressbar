@@ -629,3 +629,17 @@ make[1]: uscita dalla directory "/home/gemma/CLionProjects/progressbar/cmake-bui
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b8729/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8729.dir/build.make CMakeFiles/cmTC_b8729.dir/build
+make[1]: ingresso nella directory "/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles/CMakeTmp"
+Building C object CMakeFiles/cmTC_b8729.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b8729.dir/CheckIncludeFile.c.o   -c /home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b8729
+/home/gemma/Scrivania/clion-2017.3.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8729.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b8729.dir/CheckIncludeFile.c.o  -o cmTC_b8729 
+make[1]: uscita dalla directory "/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles/CMakeTmp"
+
+

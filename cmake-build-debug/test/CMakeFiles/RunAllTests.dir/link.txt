@@ -1,0 +1,1 @@
+/usr/bin/c++  -g     -o RunAllTests ../lib/libgtestd.a ../lib/libgtest_maind.a ../libcore.a ../lib/libgtestd.a -pthread 

@@ -34,7 +34,7 @@ private:
     int totalBytes;
     int currentByte;
     std::list<std::string> fns;
-
+    std::string directoryName;
 
 };
 

@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/progressbar.dir/main.cpp.o"
   "CMakeFiles/progressbar.dir/FileReader.cpp.o"
-  "CMakeFiles/progressbar.dir/FileBar.cpp.o"
-  "CMakeFiles/progressbar.dir/ByteBar.cpp.o"
+  "CMakeFiles/progressbar.dir/Bar.cpp.o"
   "progressbar.pdb"
   "progressbar"
 )

@@ -105,71 +105,46 @@ CMakeFiles/progressbar.dir/FileReader.cpp.o.provides: CMakeFiles/progressbar.dir
 CMakeFiles/progressbar.dir/FileReader.cpp.o.provides.build: CMakeFiles/progressbar.dir/FileReader.cpp.o
 
 
-CMakeFiles/progressbar.dir/FileBar.cpp.o: CMakeFiles/progressbar.dir/flags.make
-CMakeFiles/progressbar.dir/FileBar.cpp.o: ../FileBar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/progressbar.dir/FileBar.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/progressbar.dir/FileBar.cpp.o -c /home/gemma/CLionProjects/progressbar/FileBar.cpp
+CMakeFiles/progressbar.dir/Bar.cpp.o: CMakeFiles/progressbar.dir/flags.make
+CMakeFiles/progressbar.dir/Bar.cpp.o: ../Bar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/progressbar.dir/Bar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/progressbar.dir/Bar.cpp.o -c /home/gemma/CLionProjects/progressbar/Bar.cpp
 
-CMakeFiles/progressbar.dir/FileBar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/progressbar.dir/FileBar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gemma/CLionProjects/progressbar/FileBar.cpp > CMakeFiles/progressbar.dir/FileBar.cpp.i
+CMakeFiles/progressbar.dir/Bar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/progressbar.dir/Bar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gemma/CLionProjects/progressbar/Bar.cpp > CMakeFiles/progressbar.dir/Bar.cpp.i
 
-CMakeFiles/progressbar.dir/FileBar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/progressbar.dir/FileBar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gemma/CLionProjects/progressbar/FileBar.cpp -o CMakeFiles/progressbar.dir/FileBar.cpp.s
+CMakeFiles/progressbar.dir/Bar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/progressbar.dir/Bar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gemma/CLionProjects/progressbar/Bar.cpp -o CMakeFiles/progressbar.dir/Bar.cpp.s
 
-CMakeFiles/progressbar.dir/FileBar.cpp.o.requires:
+CMakeFiles/progressbar.dir/Bar.cpp.o.requires:
 
-.PHONY : CMakeFiles/progressbar.dir/FileBar.cpp.o.requires
+.PHONY : CMakeFiles/progressbar.dir/Bar.cpp.o.requires
 
-CMakeFiles/progressbar.dir/FileBar.cpp.o.provides: CMakeFiles/progressbar.dir/FileBar.cpp.o.requires
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/FileBar.cpp.o.provides.build
-.PHONY : CMakeFiles/progressbar.dir/FileBar.cpp.o.provides
+CMakeFiles/progressbar.dir/Bar.cpp.o.provides: CMakeFiles/progressbar.dir/Bar.cpp.o.requires
+	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/Bar.cpp.o.provides.build
+.PHONY : CMakeFiles/progressbar.dir/Bar.cpp.o.provides
 
-CMakeFiles/progressbar.dir/FileBar.cpp.o.provides.build: CMakeFiles/progressbar.dir/FileBar.cpp.o
-
-
-CMakeFiles/progressbar.dir/ByteBar.cpp.o: CMakeFiles/progressbar.dir/flags.make
-CMakeFiles/progressbar.dir/ByteBar.cpp.o: ../ByteBar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/progressbar.dir/ByteBar.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/progressbar.dir/ByteBar.cpp.o -c /home/gemma/CLionProjects/progressbar/ByteBar.cpp
-
-CMakeFiles/progressbar.dir/ByteBar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/progressbar.dir/ByteBar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gemma/CLionProjects/progressbar/ByteBar.cpp > CMakeFiles/progressbar.dir/ByteBar.cpp.i
-
-CMakeFiles/progressbar.dir/ByteBar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/progressbar.dir/ByteBar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gemma/CLionProjects/progressbar/ByteBar.cpp -o CMakeFiles/progressbar.dir/ByteBar.cpp.s
-
-CMakeFiles/progressbar.dir/ByteBar.cpp.o.requires:
-
-.PHONY : CMakeFiles/progressbar.dir/ByteBar.cpp.o.requires
-
-CMakeFiles/progressbar.dir/ByteBar.cpp.o.provides: CMakeFiles/progressbar.dir/ByteBar.cpp.o.requires
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/ByteBar.cpp.o.provides.build
-.PHONY : CMakeFiles/progressbar.dir/ByteBar.cpp.o.provides
-
-CMakeFiles/progressbar.dir/ByteBar.cpp.o.provides.build: CMakeFiles/progressbar.dir/ByteBar.cpp.o
+CMakeFiles/progressbar.dir/Bar.cpp.o.provides.build: CMakeFiles/progressbar.dir/Bar.cpp.o
 
 
 # Object files for target progressbar
 progressbar_OBJECTS = \
 "CMakeFiles/progressbar.dir/main.cpp.o" \
 "CMakeFiles/progressbar.dir/FileReader.cpp.o" \
-"CMakeFiles/progressbar.dir/FileBar.cpp.o" \
-"CMakeFiles/progressbar.dir/ByteBar.cpp.o"
+"CMakeFiles/progressbar.dir/Bar.cpp.o"
 
 # External object files for target progressbar
 progressbar_EXTERNAL_OBJECTS =
 
 progressbar: CMakeFiles/progressbar.dir/main.cpp.o
 progressbar: CMakeFiles/progressbar.dir/FileReader.cpp.o
-progressbar: CMakeFiles/progressbar.dir/FileBar.cpp.o
-progressbar: CMakeFiles/progressbar.dir/ByteBar.cpp.o
+progressbar: CMakeFiles/progressbar.dir/Bar.cpp.o
 progressbar: CMakeFiles/progressbar.dir/build.make
+progressbar: libcore.a
 progressbar: CMakeFiles/progressbar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable progressbar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable progressbar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/progressbar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -179,8 +154,7 @@ CMakeFiles/progressbar.dir/build: progressbar
 
 CMakeFiles/progressbar.dir/requires: CMakeFiles/progressbar.dir/main.cpp.o.requires
 CMakeFiles/progressbar.dir/requires: CMakeFiles/progressbar.dir/FileReader.cpp.o.requires
-CMakeFiles/progressbar.dir/requires: CMakeFiles/progressbar.dir/FileBar.cpp.o.requires
-CMakeFiles/progressbar.dir/requires: CMakeFiles/progressbar.dir/ByteBar.cpp.o.requires
+CMakeFiles/progressbar.dir/requires: CMakeFiles/progressbar.dir/Bar.cpp.o.requires
 
 .PHONY : CMakeFiles/progressbar.dir/requires
 

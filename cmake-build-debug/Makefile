@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named core
+
+# Build rule for target.
+core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 core
+.PHONY : core
+
+# fast build rule for target.
+core/fast:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
+.PHONY : core/fast
+
+#=============================================================================
 # Target rules for targets named progressbar
 
 # Build rule for target.
@@ -123,59 +136,74 @@ progressbar/fast:
 	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/build
 .PHONY : progressbar/fast
 
-ByteBar.o: ByteBar.cpp.o
+#=============================================================================
+# Target rules for targets named runAllTests
 
-.PHONY : ByteBar.o
+# Build rule for target.
+runAllTests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 runAllTests
+.PHONY : runAllTests
+
+# fast build rule for target.
+runAllTests/fast:
+	$(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/build
+.PHONY : runAllTests/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f test/lib/googletest/CMakeFiles/gtest_main.dir/build.make test/lib/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f test/lib/googletest/CMakeFiles/gtest.dir/build.make test/lib/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+Bar.o: Bar.cpp.o
+
+.PHONY : Bar.o
 
 # target to build an object file
-ByteBar.cpp.o:
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/ByteBar.cpp.o
-.PHONY : ByteBar.cpp.o
+Bar.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Bar.cpp.o
+	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/Bar.cpp.o
+.PHONY : Bar.cpp.o
 
-ByteBar.i: ByteBar.cpp.i
+Bar.i: Bar.cpp.i
 
-.PHONY : ByteBar.i
-
-# target to preprocess a source file
-ByteBar.cpp.i:
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/ByteBar.cpp.i
-.PHONY : ByteBar.cpp.i
-
-ByteBar.s: ByteBar.cpp.s
-
-.PHONY : ByteBar.s
-
-# target to generate assembly for a file
-ByteBar.cpp.s:
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/ByteBar.cpp.s
-.PHONY : ByteBar.cpp.s
-
-FileBar.o: FileBar.cpp.o
-
-.PHONY : FileBar.o
-
-# target to build an object file
-FileBar.cpp.o:
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/FileBar.cpp.o
-.PHONY : FileBar.cpp.o
-
-FileBar.i: FileBar.cpp.i
-
-.PHONY : FileBar.i
+.PHONY : Bar.i
 
 # target to preprocess a source file
-FileBar.cpp.i:
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/FileBar.cpp.i
-.PHONY : FileBar.cpp.i
+Bar.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Bar.cpp.i
+	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/Bar.cpp.i
+.PHONY : Bar.cpp.i
 
-FileBar.s: FileBar.cpp.s
+Bar.s: Bar.cpp.s
 
-.PHONY : FileBar.s
+.PHONY : Bar.s
 
 # target to generate assembly for a file
-FileBar.cpp.s:
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/FileBar.cpp.s
-.PHONY : FileBar.cpp.s
+Bar.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Bar.cpp.s
+	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/Bar.cpp.s
+.PHONY : Bar.cpp.s
 
 FileReader.o: FileReader.cpp.o
 
@@ -183,6 +211,7 @@ FileReader.o: FileReader.cpp.o
 
 # target to build an object file
 FileReader.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/FileReader.cpp.o
 	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/FileReader.cpp.o
 .PHONY : FileReader.cpp.o
 
@@ -192,6 +221,7 @@ FileReader.i: FileReader.cpp.i
 
 # target to preprocess a source file
 FileReader.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/FileReader.cpp.i
 	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/FileReader.cpp.i
 .PHONY : FileReader.cpp.i
 
@@ -201,6 +231,7 @@ FileReader.s: FileReader.cpp.s
 
 # target to generate assembly for a file
 FileReader.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/FileReader.cpp.s
 	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/FileReader.cpp.s
 .PHONY : FileReader.cpp.s
 
@@ -210,6 +241,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/main.cpp.o
 	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/main.cpp.o
 .PHONY : main.cpp.o
 
@@ -219,6 +251,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/main.cpp.i
 .PHONY : main.cpp.i
 
@@ -228,6 +261,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/main.cpp.s
 .PHONY : main.cpp.s
 
@@ -239,13 +273,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... core"
 	@echo "... progressbar"
-	@echo "... ByteBar.o"
-	@echo "... ByteBar.i"
-	@echo "... ByteBar.s"
-	@echo "... FileBar.o"
-	@echo "... FileBar.i"
-	@echo "... FileBar.s"
+	@echo "... runAllTests"
+	@echo "... gtest_main"
+	@echo "... gtest"
+	@echo "... Bar.o"
+	@echo "... Bar.i"
+	@echo "... Bar.s"
 	@echo "... FileReader.o"
 	@echo "... FileReader.i"
 	@echo "... FileReader.s"

@@ -22,11 +22,13 @@ void FileReader::detach(Observer *o) {
 
 }
 
-FileReader::FileReader(const char *directoryName) {
+FileReader::FileReader(const char *directoryName) : directoryName(directoryName){
     DIR *dir;
     struct dirent *ent;
-    totalFiles=0;
+    currentFile=0;
     dir = opendir ( directoryName);
+    if(!dir)
+        throw std::invalid_argument("Unable to open directory");
     while ((ent = readdir (dir)) != NULL) {
         if(ent->d_name[0] !='.'){
             fns.push_back( ent->d_name);
@@ -57,16 +59,15 @@ int FileReader::getCurrentByte() const {
 
 void FileReader::startReading() {
     std::fstream fin;
-    currentFile=0;
     for(auto fn :fns){
         currentByte=0;
-        fin.open("../FileBin/" + fn);
+        fin.open(directoryName + fn);
         fin.seekg (0, fin.end);
         totalBytes = fin.tellg();
-        char buffer[1025]; //let's say read by 1024 char block
+        char buffer[1025];
         buffer[1024] = '\0';
         if (!fin) {
-            std::cerr << "Unable to open file";
+            throw std::invalid_argument("Unable to open file");
         } else {
             do
            {
