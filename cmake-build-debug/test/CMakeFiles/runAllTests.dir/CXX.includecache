@@ -276,6 +276,12 @@ cxxabi.h
 acxx_demangle.h
 -
 
+/home/gemma/CLionProjects/progressbar/Bar.h
+Observer.h
+/home/gemma/CLionProjects/progressbar/Observer.h
+FileReader.h
+/home/gemma/CLionProjects/progressbar/FileReader.h
+
 /home/gemma/CLionProjects/progressbar/FileReader.h
 Subject.h
 /home/gemma/CLionProjects/progressbar/Subject.h
@@ -290,11 +296,17 @@ iostream
 Observer.h
 /home/gemma/CLionProjects/progressbar/Observer.h
 
+/home/gemma/CLionProjects/progressbar/test/FakeObserver.h
+
 /home/gemma/CLionProjects/progressbar/test/ProgressbarTest.cpp
 gtest/gtest.h
 /home/gemma/CLionProjects/progressbar/test/gtest/gtest.h
 ../FileReader.h
 /home/gemma/CLionProjects/progressbar/FileReader.h
+../Bar.h
+/home/gemma/CLionProjects/progressbar/Bar.h
+FakeObserver.h
+/home/gemma/CLionProjects/progressbar/test/FakeObserver.h
 
 /home/gemma/CLionProjects/progressbar/test/runAllTests.cpp
 gtest/gtest.h

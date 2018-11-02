@@ -5,7 +5,7 @@
 
 
 int main() {
-    FileReader fr("../FileBin");
+    FileReader fr("../FileBin/");
     Bar fb(&fr);
     try {
         fr.startReading();

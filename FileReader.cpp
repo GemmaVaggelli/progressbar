@@ -60,7 +60,6 @@ int FileReader::getCurrentByte() const {
 void FileReader::startReading() {
     std::fstream fin;
     for(auto fn :fns){
-        currentByte=0;
         fin.open(directoryName + fn);
         fin.seekg (0, fin.end);
         totalBytes = fin.tellg();
@@ -78,8 +77,9 @@ void FileReader::startReading() {
                 notify();
             } while (currentByte<totalBytes);
             currentFile++;
-            notify();
+            currentByte=0;
         }
+        notify();
         fin.close();
 
 

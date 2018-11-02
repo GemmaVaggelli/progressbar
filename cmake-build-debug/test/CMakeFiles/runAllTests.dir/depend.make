@@ -22,9 +22,11 @@ test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../test/lib/googletest/in
 test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../test/lib/googletest/include/gtest/internal/gtest-port.h
 test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../test/lib/googletest/include/gtest/internal/gtest-string.h
 test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../test/lib/googletest/include/gtest/internal/gtest-type-util.h
+test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../Bar.h
 test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../FileReader.h
 test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../Observer.h
 test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../Subject.h
+test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../test/FakeObserver.h
 test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o: ../test/ProgressbarTest.cpp
 
 test/CMakeFiles/runAllTests.dir/runAllTests.cpp.o: ../test/lib/googletest/include/gtest/gtest-death-test.h
