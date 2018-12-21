@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/runAllTests.dir/runAllTests.cpp.o"
   "CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o"
+  "CMakeFiles/runAllTests.dir/FakeObserver.cpp.o"
   "runAllTests.pdb"
   "runAllTests"
 )

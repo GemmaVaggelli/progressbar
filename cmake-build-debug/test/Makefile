@@ -125,6 +125,33 @@ runAllTests/fast:
 	cd /home/gemma/CLionProjects/progressbar/cmake-build-debug && $(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/build
 .PHONY : runAllTests/fast
 
+FakeObserver.o: FakeObserver.cpp.o
+
+.PHONY : FakeObserver.o
+
+# target to build an object file
+FakeObserver.cpp.o:
+	cd /home/gemma/CLionProjects/progressbar/cmake-build-debug && $(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/FakeObserver.cpp.o
+.PHONY : FakeObserver.cpp.o
+
+FakeObserver.i: FakeObserver.cpp.i
+
+.PHONY : FakeObserver.i
+
+# target to preprocess a source file
+FakeObserver.cpp.i:
+	cd /home/gemma/CLionProjects/progressbar/cmake-build-debug && $(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/FakeObserver.cpp.i
+.PHONY : FakeObserver.cpp.i
+
+FakeObserver.s: FakeObserver.cpp.s
+
+.PHONY : FakeObserver.s
+
+# target to generate assembly for a file
+FakeObserver.cpp.s:
+	cd /home/gemma/CLionProjects/progressbar/cmake-build-debug && $(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/FakeObserver.cpp.s
+.PHONY : FakeObserver.cpp.s
+
 ProgressbarTest.o: ProgressbarTest.cpp.o
 
 .PHONY : ProgressbarTest.o
@@ -188,6 +215,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... runAllTests"
+	@echo "... FakeObserver.o"
+	@echo "... FakeObserver.i"
+	@echo "... FakeObserver.s"
 	@echo "... ProgressbarTest.o"
 	@echo "... ProgressbarTest.i"
 	@echo "... ProgressbarTest.s"

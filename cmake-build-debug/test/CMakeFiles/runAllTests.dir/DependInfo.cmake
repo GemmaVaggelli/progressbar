@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/gemma/CLionProjects/progressbar/test/FakeObserver.cpp" "/home/gemma/CLionProjects/progressbar/cmake-build-debug/test/CMakeFiles/runAllTests.dir/FakeObserver.cpp.o"
   "/home/gemma/CLionProjects/progressbar/test/ProgressbarTest.cpp" "/home/gemma/CLionProjects/progressbar/cmake-build-debug/test/CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o"
   "/home/gemma/CLionProjects/progressbar/test/runAllTests.cpp" "/home/gemma/CLionProjects/progressbar/cmake-build-debug/test/CMakeFiles/runAllTests.dir/runAllTests.cpp.o"
   )

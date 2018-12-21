@@ -3,7 +3,6 @@
 #include "Bar.h"
 
 
-
 int main() {
     FileReader fr("../FileBin/");
     Bar fb(&fr);

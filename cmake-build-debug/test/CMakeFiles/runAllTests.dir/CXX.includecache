@@ -296,7 +296,15 @@ iostream
 Observer.h
 /home/gemma/CLionProjects/progressbar/Observer.h
 
+/home/gemma/CLionProjects/progressbar/test/FakeObserver.cpp
+FakeObserver.h
 /home/gemma/CLionProjects/progressbar/test/FakeObserver.h
+
+/home/gemma/CLionProjects/progressbar/test/FakeObserver.h
+../Observer.h
+/home/gemma/CLionProjects/progressbar/Observer.h
+../FileReader.h
+/home/gemma/CLionProjects/progressbar/FileReader.h
 
 /home/gemma/CLionProjects/progressbar/test/ProgressbarTest.cpp
 gtest/gtest.h

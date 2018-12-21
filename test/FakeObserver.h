@@ -5,7 +5,8 @@
 #ifndef PROGRESSBAR_FAKEOBSERVER_H
 #define PROGRESSBAR_FAKEOBSERVER_H
 
-
+#include "../Observer.h"
+#include "../FileReader.h"
 
 class FakeObserver: public Observer {
 public:
@@ -22,11 +23,6 @@ private:
 
 
 };
-void FakeObserver::update() {
-    trackedData.push_back(std::make_pair(fr->getCurrentFile(), fr->getCurrentByte()));
-}
-std::list<std::pair<int,int>> FakeObserver::getTrackedData() {
-    return trackedData;
-}
+
 
 #endif //PROGRESSBAR_FAKEOBSERVER_H

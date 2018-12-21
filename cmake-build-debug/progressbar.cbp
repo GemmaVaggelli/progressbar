@@ -328,6 +328,12 @@
 			<Option target="core"/>
 			<Option target="progressbar"/>
 		</Unit>
+		<Unit filename="/home/gemma/CLionProjects/progressbar/test/FakeObserver.cpp">
+			<Option target="runAllTests"/>
+		</Unit>
+		<Unit filename="/home/gemma/CLionProjects/progressbar/test/FakeObserver.h">
+			<Option target="runAllTests"/>
+		</Unit>
 		<Unit filename="/home/gemma/CLionProjects/progressbar/test/ProgressbarTest.cpp">
 			<Option target="runAllTests"/>
 		</Unit>

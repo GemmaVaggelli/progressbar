@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/runAllTests.dir/runAllTests.cpp.o CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o  -o runAllTests ../lib/libgtestd.a ../lib/libgtest_maind.a ../libcore.a ../lib/libgtestd.a -pthread 
+/usr/bin/c++  -g   CMakeFiles/runAllTests.dir/runAllTests.cpp.o CMakeFiles/runAllTests.dir/ProgressbarTest.cpp.o CMakeFiles/runAllTests.dir/FakeObserver.cpp.o  -o runAllTests ../lib/libgtestd.a ../lib/libgtest_maind.a ../libcore.a ../lib/libgtestd.a -pthread 
