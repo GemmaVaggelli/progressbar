@@ -13,7 +13,7 @@
 
 class FileReader : public Subject{
 public:
-    explicit FileReader(const char *directoryName);
+    explicit FileReader(const char *directoryName, int bytePerSecond);
     void startReading();
     void notify() override ;
     void attach(Observer* o)override ;
@@ -35,6 +35,7 @@ private:
     int currentByte;
     std::list<std::string> fns;
     std::string directoryName;
+    int bytePerSecond;
 
 };
 

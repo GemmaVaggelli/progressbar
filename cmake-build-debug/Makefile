@@ -235,35 +235,35 @@ FileReader.cpp.s:
 	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/FileReader.cpp.s
 .PHONY : FileReader.cpp.s
 
-main.o: main.cpp.o
+MyApp.o: MyApp.cpp.o
 
-.PHONY : main.o
+.PHONY : MyApp.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/main.cpp.o
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/main.cpp.o
-.PHONY : main.cpp.o
+MyApp.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/MyApp.cpp.o
+	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/MyApp.cpp.o
+.PHONY : MyApp.cpp.o
 
-main.i: main.cpp.i
+MyApp.i: MyApp.cpp.i
 
-.PHONY : main.i
+.PHONY : MyApp.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/main.cpp.i
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/main.cpp.i
-.PHONY : main.cpp.i
+MyApp.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/MyApp.cpp.i
+	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/MyApp.cpp.i
+.PHONY : MyApp.cpp.i
 
-main.s: main.cpp.s
+MyApp.s: MyApp.cpp.s
 
-.PHONY : main.s
+.PHONY : MyApp.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/main.cpp.s
-	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/main.cpp.s
-.PHONY : main.cpp.s
+MyApp.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/MyApp.cpp.s
+	$(MAKE) -f CMakeFiles/progressbar.dir/build.make CMakeFiles/progressbar.dir/MyApp.cpp.s
+.PHONY : MyApp.cpp.s
 
 # Help Target
 help:
@@ -284,9 +284,9 @@ help:
 	@echo "... FileReader.o"
 	@echo "... FileReader.i"
 	@echo "... FileReader.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... MyApp.o"
+	@echo "... MyApp.i"
+	@echo "... MyApp.s"
 .PHONY : help
 
 

@@ -5,13 +5,14 @@
 #ifndef PROGRESSBAR_PROGRESSBARCONTROLL_H
 #define PROGRESSBAR_PROGRESSBARCONTROLL_H
 
+#include <wx/wx.h>
 #include "Observer.h"
 #include "FileReader.h"
 
 class Bar:public Observer{
 public:
     void update()override ;
-    explicit Bar(FileReader *fr);
+    Bar(FileReader *fr,wxFrame* frame);
 
     int getCurrentFile() const;
 
@@ -35,6 +36,8 @@ private:
     int currentByte;
     int totalBytes;
     FileReader* fr;
+    wxGauge* byteBar;
+    wxGauge* fileBar;
 
 
 };

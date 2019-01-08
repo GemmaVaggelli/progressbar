@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/core.dir/main.cpp.o"
   "CMakeFiles/core.dir/FileReader.cpp.o"
   "CMakeFiles/core.dir/Bar.cpp.o"
+  "CMakeFiles/core.dir/MyApp.cpp.o"
   "libcore.pdb"
   "libcore.a"
 )

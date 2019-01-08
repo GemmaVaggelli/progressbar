@@ -57,33 +57,9 @@ include CMakeFiles/core.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/core.dir/flags.make
 
-CMakeFiles/core.dir/main.cpp.o: CMakeFiles/core.dir/flags.make
-CMakeFiles/core.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/core.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/main.cpp.o -c /home/gemma/CLionProjects/progressbar/main.cpp
-
-CMakeFiles/core.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gemma/CLionProjects/progressbar/main.cpp > CMakeFiles/core.dir/main.cpp.i
-
-CMakeFiles/core.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gemma/CLionProjects/progressbar/main.cpp -o CMakeFiles/core.dir/main.cpp.s
-
-CMakeFiles/core.dir/main.cpp.o.requires:
-
-.PHONY : CMakeFiles/core.dir/main.cpp.o.requires
-
-CMakeFiles/core.dir/main.cpp.o.provides: CMakeFiles/core.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/core.dir/main.cpp.o.provides
-
-CMakeFiles/core.dir/main.cpp.o.provides.build: CMakeFiles/core.dir/main.cpp.o
-
-
 CMakeFiles/core.dir/FileReader.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/FileReader.cpp.o: ../FileReader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/core.dir/FileReader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/core.dir/FileReader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/FileReader.cpp.o -c /home/gemma/CLionProjects/progressbar/FileReader.cpp
 
 CMakeFiles/core.dir/FileReader.cpp.i: cmake_force
@@ -107,7 +83,7 @@ CMakeFiles/core.dir/FileReader.cpp.o.provides.build: CMakeFiles/core.dir/FileRea
 
 CMakeFiles/core.dir/Bar.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/Bar.cpp.o: ../Bar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/core.dir/Bar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/core.dir/Bar.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/Bar.cpp.o -c /home/gemma/CLionProjects/progressbar/Bar.cpp
 
 CMakeFiles/core.dir/Bar.cpp.i: cmake_force
@@ -129,18 +105,42 @@ CMakeFiles/core.dir/Bar.cpp.o.provides: CMakeFiles/core.dir/Bar.cpp.o.requires
 CMakeFiles/core.dir/Bar.cpp.o.provides.build: CMakeFiles/core.dir/Bar.cpp.o
 
 
+CMakeFiles/core.dir/MyApp.cpp.o: CMakeFiles/core.dir/flags.make
+CMakeFiles/core.dir/MyApp.cpp.o: ../MyApp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/core.dir/MyApp.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/MyApp.cpp.o -c /home/gemma/CLionProjects/progressbar/MyApp.cpp
+
+CMakeFiles/core.dir/MyApp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/MyApp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gemma/CLionProjects/progressbar/MyApp.cpp > CMakeFiles/core.dir/MyApp.cpp.i
+
+CMakeFiles/core.dir/MyApp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/MyApp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gemma/CLionProjects/progressbar/MyApp.cpp -o CMakeFiles/core.dir/MyApp.cpp.s
+
+CMakeFiles/core.dir/MyApp.cpp.o.requires:
+
+.PHONY : CMakeFiles/core.dir/MyApp.cpp.o.requires
+
+CMakeFiles/core.dir/MyApp.cpp.o.provides: CMakeFiles/core.dir/MyApp.cpp.o.requires
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/MyApp.cpp.o.provides.build
+.PHONY : CMakeFiles/core.dir/MyApp.cpp.o.provides
+
+CMakeFiles/core.dir/MyApp.cpp.o.provides.build: CMakeFiles/core.dir/MyApp.cpp.o
+
+
 # Object files for target core
 core_OBJECTS = \
-"CMakeFiles/core.dir/main.cpp.o" \
 "CMakeFiles/core.dir/FileReader.cpp.o" \
-"CMakeFiles/core.dir/Bar.cpp.o"
+"CMakeFiles/core.dir/Bar.cpp.o" \
+"CMakeFiles/core.dir/MyApp.cpp.o"
 
 # External object files for target core
 core_EXTERNAL_OBJECTS =
 
-libcore.a: CMakeFiles/core.dir/main.cpp.o
 libcore.a: CMakeFiles/core.dir/FileReader.cpp.o
 libcore.a: CMakeFiles/core.dir/Bar.cpp.o
+libcore.a: CMakeFiles/core.dir/MyApp.cpp.o
 libcore.a: CMakeFiles/core.dir/build.make
 libcore.a: CMakeFiles/core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcore.a"
@@ -152,9 +152,9 @@ CMakeFiles/core.dir/build: libcore.a
 
 .PHONY : CMakeFiles/core.dir/build
 
-CMakeFiles/core.dir/requires: CMakeFiles/core.dir/main.cpp.o.requires
 CMakeFiles/core.dir/requires: CMakeFiles/core.dir/FileReader.cpp.o.requires
 CMakeFiles/core.dir/requires: CMakeFiles/core.dir/Bar.cpp.o.requires
+CMakeFiles/core.dir/requires: CMakeFiles/core.dir/MyApp.cpp.o.requires
 
 .PHONY : CMakeFiles/core.dir/requires
 

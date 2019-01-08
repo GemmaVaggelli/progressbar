@@ -5,6 +5,7 @@
 #include "FileReader.h"
 #include <fstream>
 #include <dirent.h>
+#include <wx/utils.h>
 
 void FileReader::notify() {
     for(auto o : obs)
@@ -22,7 +23,7 @@ void FileReader::detach(Observer *o) {
 
 }
 
-FileReader::FileReader(const char *directoryName) : directoryName(directoryName){
+FileReader::FileReader(const char *directoryName, int bytePerSecond) : directoryName(directoryName), bytePerSecond(bytePerSecond){
     DIR *dir;
     struct dirent *ent;
     currentFile=0;
@@ -63,15 +64,16 @@ void FileReader::startReading() {
         fin.open(directoryName + fn);
         fin.seekg (0, fin.end);
         totalBytes = fin.tellg();
-        char buffer[1025];
-        buffer[1024] = '\0';
+        char buffer[bytePerSecond+1];
+        buffer[bytePerSecond] = '\0';
         if (!fin) {
             throw std::invalid_argument("Unable to open file");
         } else {
             do
            {
-                fin.read(buffer, 1024);
-                currentByte+=1024;
+               wxMilliSleep(20);
+                fin.read(buffer, bytePerSecond);
+                currentByte+=bytePerSecond;
                if(currentByte>totalBytes)
                    currentByte=totalBytes;
                 notify();
@@ -79,6 +81,7 @@ void FileReader::startReading() {
             currentFile++;
             currentByte=0;
         }
+        //currentByte = totalBytes;
         notify();
         fin.close();
 

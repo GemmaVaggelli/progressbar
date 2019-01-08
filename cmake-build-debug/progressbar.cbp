@@ -316,15 +316,19 @@
 			<Option target="core"/>
 			<Option target="progressbar"/>
 		</Unit>
+		<Unit filename="/home/gemma/CLionProjects/progressbar/MyApp.cpp">
+			<Option target="core"/>
+			<Option target="progressbar"/>
+		</Unit>
+		<Unit filename="/home/gemma/CLionProjects/progressbar/MyApp.h">
+			<Option target="core"/>
+			<Option target="progressbar"/>
+		</Unit>
 		<Unit filename="/home/gemma/CLionProjects/progressbar/Observer.h">
 			<Option target="core"/>
 			<Option target="progressbar"/>
 		</Unit>
 		<Unit filename="/home/gemma/CLionProjects/progressbar/Subject.h">
-			<Option target="core"/>
-			<Option target="progressbar"/>
-		</Unit>
-		<Unit filename="/home/gemma/CLionProjects/progressbar/main.cpp">
 			<Option target="core"/>
 			<Option target="progressbar"/>
 		</Unit>

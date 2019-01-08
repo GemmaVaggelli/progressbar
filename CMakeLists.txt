@@ -4,9 +4,9 @@ project(progressbar)
 set(CMAKE_CXX_STANDARD 11)
 add_subdirectory(test)
 
-set(SOURCE_FILES main.cpp Subject.h Observer.h FileReader.cpp FileReader.h Bar.cpp Bar.h)
+set(SOURCE_FILES Subject.h Observer.h FileReader.cpp FileReader.h Bar.cpp Bar.h MyApp.cpp MyApp.h)
 
-add_executable(progressbar main.cpp Subject.h Observer.h FileReader.cpp FileReader.h Bar.cpp Bar.h)
+add_executable(progressbar Subject.h Observer.h FileReader.cpp FileReader.h Bar.cpp Bar.h MyApp.cpp MyApp.h)
 add_library(core ${SOURCE_FILES})
 
 set(wxWidgets_ROOT_DIR </usr/include/wx-3.0-unofficial>)

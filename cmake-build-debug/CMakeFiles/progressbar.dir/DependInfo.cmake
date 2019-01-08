@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gemma/CLionProjects/progressbar/Bar.cpp" "/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles/progressbar.dir/Bar.cpp.o"
   "/home/gemma/CLionProjects/progressbar/FileReader.cpp" "/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles/progressbar.dir/FileReader.cpp.o"
-  "/home/gemma/CLionProjects/progressbar/main.cpp" "/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles/progressbar.dir/main.cpp.o"
+  "/home/gemma/CLionProjects/progressbar/MyApp.cpp" "/home/gemma/CLionProjects/progressbar/cmake-build-debug/CMakeFiles/progressbar.dir/MyApp.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

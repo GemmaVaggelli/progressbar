@@ -6,21 +6,29 @@
 #include <iostream>
 #include "Bar.h"
 
-
-Bar::Bar( FileReader *fr): fr(fr) {
+Bar::Bar( FileReader *fr,wxFrame* frame): fr(fr) {
 
     totalFile=fr->getTotalFiles();
     currentFile=0;
     currentByte=0;
     fr->attach(this);
+    byteBar= new wxGauge(frame,wxID_ANY,100,wxDefaultPosition,wxSize(300,100));
+    byteBar->SetFocus();
+    fileBar= new wxGauge(frame,wxID_ANY,100,wxPoint(0,100),wxSize(300,100));
+    fileBar->SetFocus();
+
 }
 
 void Bar::update() {
     currentFile=fr->getCurrentFile();
     std::cout<<"% di file "<<currentFile*100.0f/totalFile<<"%"<<std::endl;
+    fileBar->SetValue(currentFile*100.0f/totalFile);
+    fileBar->Update();
     totalBytes=fr->getTotalBytes();
     currentByte=fr->getCurrentByte();
     std::cout<<"% di byte"<<currentByte*100.0f/totalBytes<<"%"<<std::endl;
+    byteBar->SetValue(currentByte*100.0f/totalBytes);
+    fileBar->Update();
 
 }
 
